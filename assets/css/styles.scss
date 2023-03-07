@@ -1,0 +1,121 @@
+header {
+  text-align: center;
+  h1 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    transform: translateY(-10%);
+    transform: translateX(-60%);
+    color: white;
+    z-index: 10;
+    font-family: "Shippori Mincho", serif;
+    font-size: 5rem;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+  }
+  p {
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    transform: translateY(-80%);
+    transform: translateX(-25%);
+    color: white;
+    z-index: 10;
+    font-family: "Shippori Mincho", serif;
+    font-size: 5rem;
+  }
+  nav {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateY(-95%);
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 100vw;
+    text-align: center;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      color: white;
+      li {
+        font-size: 2.2rem;
+        width: 25%;
+        a {
+          display: block;
+          img {
+            width: 45%;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  //   padding-top: 40px;
+  //   background-color: rgb(62, 62, 62);
+  .visualContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    .movieBox {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .movieBox {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC)
+          repeat;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-attachment: fixed;
+      }
+    }
+  }
+
+  .enquetearea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+html {
+  font-size: 10px;
+}
+
+body,
+ul,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+/*# sourceMappingURL=base.css.map */

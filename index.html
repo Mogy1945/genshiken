@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/menu.css" />
+    <!-- Googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Kaisei+Tokumin:wght@700&family=Shippori+Mincho:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>げんしけんキャンプ公式</h1>
+      <!-- <p>2023</p> -->
+      <!-- <ul>
+        <li>Top</li>
+        <li>Enquete</li>
+        <li>Album</li>
+      </ul> -->
+      <!-- <div class="list">
+        <div class="item">
+          <button class="menu-trigger" id="menu11">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div> -->
+      <nav>
+        <ul>
+          <li>
+            <a href="">
+              <img src="./assets/img/pencil.png" alt="アンケート" />
+              <span>Enquete</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./assets/img/picture.png" alt="アルバム" />
+              <span>Album</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="visualContainer">
+          <div class="movieBox">
+            <video muted loop autoplay>
+              <source
+                src="./assets/video/topMovie.mp4"
+                type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+                autoplay
+              />
+              <p>
+                動画を再生するには、videoタグをサポートしたブラウザが必要です。
+              </p>
+            </video>
+          </div>
+        </div>
+      </section>
+      <section class="enquetearea">
+        <h2>Enquete</h2>
+        <p>アンケート結果はこちら</p>
+        <div class="enqueteContainer">
+          <div class="enqueteBox">
+            <p>どこに住んでる？</p>
+            <img src="" alt="" />
+          </div>
+          <div class="enqueteBox">アンケート2</div>
+          <div class="enqueteBox">アンケート3</div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+      integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/menu.js"></script>
+  </body>
+</html>
